@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:id="@+id/bottom_sheet_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    app:cardCornerRadius="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv"
+            android:text="Start creating now"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/pin"
+                android:id="@+id/imgPin"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvPin"
+                android:text="Pin"
+                android:layout_below="@+id/imgPin"
+                android:layout_marginLeft="47dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginBottom="30sp"
+                android:fontFamily="sans-serif"/>
+
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:src="@drawable/board"
+                android:layout_toRightOf="@+id/imgPin"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/imgBoard"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvBoard"
+                android:text="Board"
+                android:layout_below="@+id/imgBoard"
+                android:layout_alignRight="@id/imgBoard"
+                android:layout_marginRight="33dp"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

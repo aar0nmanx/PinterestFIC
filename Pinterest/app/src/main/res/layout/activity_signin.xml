@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/login"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imgLogo"
+                android:layout_marginTop="250dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgLogo"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp"
+                android:fontFamily="sans-serif"
+                android:text="Welcome to Pinterest"
+                android:textColor="@color/black"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/tv"
+                android:hint="Email address"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/corners_button"/>
+
+            <EditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif"
+                android:layout_below="@+id/edtEmail"
+                android:hint="Password"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:background="@drawable/corners_button"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnContinue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/edtPassword"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:background="@drawable/btn_bg"
+                android:layout_marginTop="25dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:id="@+id/btnFb"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btnContinue"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/fbb"
+                android:scaleType="fitXY"
+                android:layout_marginTop="20dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+            <ImageView
+                android:id="@+id/btnGoogle"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/btnFb"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:src="@drawable/google"
+                android:scaleType="fitXY"
+                android:layout_marginTop="10dp"
+                android:text="Continue"
+                android:textColor="@color/white"
+                android:textAllCaps="false"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

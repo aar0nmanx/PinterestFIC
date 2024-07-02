@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "637622718226",
+    "firebase_url": "https://pinterest-a41c2-default-rtdb.firebaseio.com",
+    "project_id": "pinterest-a41c2",
+    "storage_bucket": "pinterest-a41c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637622718226:android:65ac3d5bcb8803e8e12dcb",
+        "android_client_info": {
+          "package_name": "com.app.pinterest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpjunQokGEOPXShjEesGYzDPV9OHYfBcM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

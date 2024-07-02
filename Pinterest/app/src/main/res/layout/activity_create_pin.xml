@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30sp"
+        android:src="@drawable/ic_arrow_back"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/imgCancel"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create Pin"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relative1"
+        android:layout_below="@+id/imgCancel">
+
+        <RelativeLayout
+            android:id="@+id/hori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/imgPin"
+                android:layout_width="110dp"
+                android:layout_height="150dp"
+                android:src="@drawable/holder"
+                android:scaleType="fitXY" />
+
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/hori">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/l1"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="110dp"
+                                android:id="@+id/addInflateLayout"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="40dp"
+                                android:layout_marginLeft="5dp">
+
+                            </LinearLayout>
+
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCD9D9"
+                    android:layout_below="@+id/l1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/v1"/>
+
+
+                <EditText
+                    android:id="@+id/edtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v1"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#fff"
+                    android:hint="Title" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCD9D9"
+                    android:layout_below="@+id/edtTitle"
+                    android:id="@+id/v3"/>
+
+                <EditText
+                    android:id="@+id/edtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v3"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#fff"
+                    android:hint="Description" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCD9D9"
+                    android:layout_below="@+id/edtDescription"
+                    android:id="@+id/v4"/>
+
+
+                <EditText
+                    android:id="@+id/edtLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v4"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:backgroundTint="#fff"
+                    android:hint="Link" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCD9D9"
+                    android:layout_below="@+id/edtLink"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/v5"/>
+
+                <RelativeLayout
+                    android:id="@+id/tvCate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v5"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pick a board"
+                        android:textColor="#000"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:textSize="18sp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Profile"
+                        android:id="@+id/tvBoard"
+                        android:drawableRight="@drawable/ic_arrow_forward"
+                        android:drawablePadding="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#DCD9D9"
+                    android:layout_below="@+id/tvCate"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/v55"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnCreate"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_below="@+id/v55"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/btn_bg"
+                    android:layout_marginTop="40dp"
+                    android:text="Create"
+                    android:textSize="18sp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="false"/>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
